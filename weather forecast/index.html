@@ -3,36 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minimal Weather App</title>
+    <title>Retro Virtual Drum Kit</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="weather-container">
-        <h2 class="title">Weather App</h2>
-        <div class="search-box">
-            <input type="text" id="city-input" placeholder="Enter city name..." autocomplete="off">
-            <button id="search-btn">Search</button>
-        </div>
-        
-        <div id="weather-info" class="weather-info hidden">
-            <h1 id="city-name">New York</h1>
-            <img id="weather-icon" src="" alt="Weather Icon">
-            <p id="description">Clear Sky</p>
-            <div id="temperature">25°C</div>
-            
-            <div class="details">
-                <div class="col">
-                    <p class="label">Humidity</p>
-                    <p id="humidity" class="value">60%</p>
-                </div>
-                <div class="col">
-                    <p class="label">Wind Speed</p>
-                    <p id="wind" class="value">15 km/h</p>
-                </div>
+    <div class="interface-container">
+        <h1>Lo-Fi Drum Pad</h1>
+        <p class="subtitle">Click a pad or press the matching keyboard key</p>
+
+        <div class="drum-grid">
+            <div class="pad" data-key="a">
+                <kbd>A</kbd>
+                <span class="sound">Kick</span>
+            </div>
+            <div class="pad" data-key="s">
+                <kbd>S</kbd>
+                <span class="sound">Snare</span>
+            </div>
+            <div class="pad" data-key="d">
+                <kbd>D</kbd>
+                <span class="sound">Hi-Hat</span>
+            </div>
+            <div class="pad" data-key="f">
+                <kbd>F</kbd>
+                <span class="sound">Clap</span>
             </div>
         </div>
-
-        <p id="error-msg" class="error-msg hidden">City not found. Please try again.</p>
     </div>
 
     <script src="script.js"></script>
