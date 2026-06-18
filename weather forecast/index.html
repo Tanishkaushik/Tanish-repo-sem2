@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimal Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="weather-container">
+        <h2 class="title">Weather App</h2>
+        <div class="search-box">
+            <input type="text" id="city-input" placeholder="Enter city name..." autocomplete="off">
+            <button id="search-btn">Search</button>
+        </div>
+        
+        <div id="weather-info" class="weather-info hidden">
+            <h1 id="city-name">New York</h1>
+            <img id="weather-icon" src="" alt="Weather Icon">
+            <p id="description">Clear Sky</p>
+            <div id="temperature">25°C</div>
+            
+            <div class="details">
+                <div class="col">
+                    <p class="label">Humidity</p>
+                    <p id="humidity" class="value">60%</p>
+                </div>
+                <div class="col">
+                    <p class="label">Wind Speed</p>
+                    <p id="wind" class="value">15 km/h</p>
+                </div>
+            </div>
+        </div>
+
+        <p id="error-msg" class="error-msg hidden">City not found. Please try again.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
