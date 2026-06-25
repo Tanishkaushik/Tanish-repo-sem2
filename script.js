@@ -1,4 +1,4 @@
-// Using Web Audio API to synthesize sounds dynamically so you don't need audio files in your repo
+
 const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
 
 function playSound(soundType) {
